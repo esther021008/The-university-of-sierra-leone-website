@@ -3,8 +3,32 @@
     margin: 0;
 }
 body{
-    background-color: rgb(229, 229, 237);
+    background-color: rgb(127, 126, 126);
     
+}
+ 
+.navbar1{
+    display: flex;
+    color: white;
+     background-color: rgb(20, 20, 64);
+     gap: 120px;
+     justify-content: space-around;
+     height: 40px;
+     padding: 20px;
+     border-radius: 25px;
+     margin: 10px;
+     box-shadow: 0 0px 15px rgb(20, 20, 64);
+    animation: anime 1s  ease-out ;
+}
+@keyframes anime {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translatey(0);
+    }
 }
 .navbar{
     display: flex;
@@ -14,11 +38,33 @@ body{
      justify-content: space-around;
      height: 40px;
      padding: 20px;
+     border-radius: 25px;
+     margin: 10px;
+     box-shadow: 0 0px 15px rgb(20, 20, 64);
 }
 .list{
     display: flex;
     gap: 40px;
     list-style: none;
+}
+.list li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding-bottom: 10px;
+}
+.list li a::after{
+    content: "";
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background:white;
+    transition: width 0.3s ease;
+}
+.list li a:hover::after{
+    width: 100%;
 }
 .logo{
     display: flex;
@@ -63,7 +109,7 @@ button a{
     text-align: center;
     padding: 100px 50px;
     height: 200px;
-    background-color: rgb(144, 142, 142);
+    background-color: rgb(127, 126, 126);
     color: white;
     font-size: 30px;
     text-transform: capitalize;
@@ -97,6 +143,7 @@ button a{
 }
 .universities-section{
     margin-top: 80px;
+    background-color: rgb(201, 206, 206);
 }
 .title{
     text-align: center;
@@ -118,4 +165,54 @@ button a{
     color: white;
     padding: 12px;
     border-radius: 15px;
+}
+.ufooter{
+    background-color: rgb(20, 20, 64);
+    text-align: center;
+    color: white;
+    height: 20px;
+}
+.back button {
+    background-color: rgb(15, 15, 67);
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin: 20px;
+}
+.back a{
+    color: white;
+    text-transform: capitalize;
+    background-color:rgb(15, 15, 67) ;
+}
+.hero3{
+    height: 100vh;
+    text-align: center;
+    padding: 100px 50px;
+    height: 200px;
+    background-color: rgb(127, 126, 126);
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.about{
+    background-color: rgb(201, 206, 206);
+    display: flex;
+    
+     text-transform: capitalize;
+    font-size: 20px;
+    line-height: 40px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.box1{
+    border-radius: 15px;
+    width: 350px;
+    margin: 20px;
+    box-shadow: 0 0 5px ;
+    position: relative;
+    border-radius: 15px;
+    transition: .45s ;
+    padding: 10px;
+}
+.box1:hover{
+    transform: translatey(-15px);
 }
