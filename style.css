@@ -3,7 +3,16 @@
     margin: 0;
 }
 body{
-    background-color: rgb(127, 126, 126);
+    /* background-color: rgb(127, 126, 126); */
+    /* background:
+        linear-gradient(
+            rgba(0,0,0,0.1),
+            rgba(0,0,0,0.1)
+        ),
+        url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
     
 }
  
@@ -72,13 +81,22 @@ body{
     align-items: center;
 }
 .hero{
-    background-color: rgb(127, 126, 126);
+    /* background-color: rgb(127, 126, 126); */
     height: 100vh;
     justify-content: center;
     text-align: center;
     padding: 200px;
-    color: white;
+    color: black;
     font-size: 20px;
+   background:
+        linear-gradient(
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+        ),
+        url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .h2{
     font-size: 60px;
@@ -88,14 +106,14 @@ body{
     padding: 20px 40px;
     border-radius: 15px;
     margin: 60px;
-    background-color: aqua;
+    background-color: rgb(20, 20, 64);
 }
 li a{
     text-decoration: none;
     color: white;
 }
-button a{
-    color: black;
+.hero button a{
+    color:white;
     text-decoration: none;
     font-size: 20px;
 }
@@ -105,14 +123,23 @@ button a{
     padding: 10px;
 }
 .hero2{
-    height: 100vh;
+    /* height: 100vh; */
     text-align: center;
-    padding: 100px 50px;
-    height: 200px;
-    background-color: rgb(127, 126, 126);
-    color: white;
+    padding: 300px 50px;
+    height: 300px;
+    /* background-color: rgb(127, 126, 126); */
+    color: black;
     font-size: 30px;
     text-transform: capitalize;
+       background:
+        linear-gradient(
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+        ),
+        url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .colleges{
     text-transform: capitalize;
@@ -134,6 +161,10 @@ button a{
     border-radius: 15px;
     transition: .45s ;
 }
+
+.college h3{
+    padding: 10px 20px;
+}
 .college:hover{
     transform: translateY(-15px);
 }
@@ -142,8 +173,10 @@ button a{
     border-radius: 15px;
 }
 .universities-section{
-    margin-top: 80px;
-    background-color: rgb(201, 206, 206);
+    padding: 80px 0px;
+    /* margin-top: 80px; */
+
+    /* background-color: rgb(201, 206, 206); */
 }
 .title{
     text-align: center;
@@ -156,15 +189,17 @@ button a{
     width: 350px;
     margin: 20px 20px 100px 20px;
 }
-.college button{
+.college button a{
     position: absolute;
     left: 100px;
-    top:90%;
+    top:85%;
     margin: 10px;
     background-color: rgb(20, 20, 64);
     color: white;
     padding: 12px;
     border-radius: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
 }
 .ufooter{
     background-color: rgb(20, 20, 64);
@@ -172,31 +207,42 @@ button a{
     color: white;
     height: 20px;
 }
-.back button {
+.back button  {
     background-color: rgb(15, 15, 67);
     border-radius: 20px;
     padding: 10px 40px;
-    margin: 20px;
+    margin: 20px; 
 }
 .back a{
     color: white;
     text-transform: capitalize;
     background-color:rgb(15, 15, 67) ;
+    text-decoration: none;
 }
 .hero3{
     height: 100vh;
     text-align: center;
-    padding: 100px 50px;
-    height: 200px;
-    background-color: rgb(127, 126, 126);
-    color: white;
+    padding: 200px 50px;
+    height: 300px;
+    /* background-color: rgb(127, 126, 126); */
+    color: black;
     font-size: 30px;
+    font-weight: bold;
     text-transform: capitalize;
+       background:
+        linear-gradient(
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+        ),
+        url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .about{
     background-color: rgb(201, 206, 206);
     display: flex;
-    
+    padding: 70px;
      text-transform: capitalize;
     font-size: 20px;
     line-height: 40px;
@@ -215,4 +261,251 @@ button a{
 }
 .box1:hover{
     transform: translatey(-15px);
+}
+
+/* contact section */
+.hero4{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+     background-color: rgb(20, 20, 64);
+     padding: 10px;
+     margin: 10% auto;
+     width:700px ;
+     height: 400px;
+     border-radius: 25px;
+     color: white;
+     text-transform: capitalize;
+     box-shadow: 0 0 10px;
+    
+}
+
+.hero4 h1{
+    margin-bottom: 30px;
+ }
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+   
+} 
+.box{
+    position: relative;
+}
+
+/* input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}  */
+
+ input{
+    display: block;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid rgb(211, 194, 194);
+    color: white;
+}
+
+input:focus{
+    border: 2px solid cyan;
+}
+
+ /* label{
+    margin: 10px;
+}  */
+
+ .input1{
+    outline: none;
+}
+
+.label1{
+    position: absolute;
+    top: 11%;
+    left: 20px;
+    transition: .3s;
+}
+
+.input1:focus + .label1,
+.input1:valid + .label1{
+    top: -0.4%;
+    background-color:rgb(20, 20, 64);
+} 
+
+.input2{
+    outline: none;
+}
+
+.label2{
+    position: absolute;
+    top: 45%;
+    left: 20px;
+    transition: .3s;
+}
+
+.input2:focus + .label2,
+.input2:valid + .label2{
+    top: 34%;
+    background-color: rgb(20, 20, 64);
+} 
+
+.input3{
+    outline: none;
+}
+
+.label3{
+    position: absolute;
+    top: 77%;
+    left: 20px;
+    transition: .3s;
+}
+
+.input3:focus + .label3,
+.input3:valid + .label3{
+    top: 67%;
+    background-color: rgb(20, 20, 64);
+} 
+ 
+.hero4 button{
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 45px;
+    color: black;
+}
+.FBC{
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url(images/fbc2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: white;
+}
+.histroy{
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900px;
+    text-transform: capitalize;
+}
+.t{
+    color: rgb(20, 20, 64);
+    font-weight: 400px;
+    font-size: 60px;
+}
+.p1{
+    margin-top: 10px;
+    padding: 20px 20px;
+    line-height: 35px;
+}
+.heading{
+    text-align: center;
+    text-transform: capitalize;
+   font-size: 40px;
+   margin: 10px;
+
+}
+.faculties{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.faculty{
+    text-transform: capitalize;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    width: 70%;
+    height: 90%;
+    margin: 0px 170px;
+}
+.faculty h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+.faculties h3{
+    font-size: 25px;
+}
+.notes{
+    display: flex;
+    margin: 10px 10px;
+    gap: 80px;
+}
+.notes li{
+    list-style: none;
+    padding: 5px;
+    line-height: 25px;
+}
+.FBC button  {
+    background-color: rgb(15, 15, 67);
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin: 20px; 
+}
+.FBC a{
+    color: white;
+    text-transform: capitalize;
+    background-color:rgb(15, 15, 67) ;
+    text-decoration: none;
+}
+.comahs{
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url(images/comahs2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: white;
+}
+.comahs button  {
+    background-color: rgb(15, 15, 67);
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin: 20px; 
+}
+.comahs a{
+    color: white;
+    text-transform: capitalize;
+    background-color:rgb(15, 15, 67) ;
+    text-decoration: none;
+}
+.ipam{
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url(images/ipam2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: white;
+}
+.ipam .t{
+    color: rgb(10, 26, 126);
+}
+.ipam button  {
+    background-color: rgb(15, 15, 67);
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin: 20px; 
+}
+.ipam a{
+    color: white;
+    text-transform: capitalize;
+    background-color:rgb(15, 15, 67) ;
+    text-decoration: none;
 }
