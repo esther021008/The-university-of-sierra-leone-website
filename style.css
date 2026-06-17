@@ -2,19 +2,6 @@
     padding: 0;
     margin: 0;
 }
-body{
-    /* background-color: rgb(127, 126, 126); */
-    /* background:
-        linear-gradient(
-            rgba(0,0,0,0.1),
-            rgba(0,0,0,0.1)
-        ),
-        url(images/bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
-    
-}
  
 .navbar1{
     display: flex;
@@ -23,6 +10,7 @@ body{
      gap: 120px;
      justify-content: space-around;
      height: 40px;
+     width: 95%;
      padding: 20px;
      border-radius: 25px;
      margin: 10px;
@@ -90,8 +78,8 @@ body{
     font-size: 20px;
    background:
         linear-gradient(
-            rgba(0,0,0,0.3),
-            rgba(0,0,0,0.3)
+            rgba(0,0,0,0.2),
+            rgba(0,0,0,0.2)
         ),
         url(images/bg.jpg);
     background-size: cover;
@@ -101,6 +89,10 @@ body{
 .h2{
     font-size: 60px;
     margin-bottom: 20px;
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.8)
+}
+.hero p{
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.8)
 }
 .hero button{
     padding: 20px 40px;
@@ -133,13 +125,17 @@ li a{
     text-transform: capitalize;
        background:
         linear-gradient(
-            rgba(0,0,0,0.3),
-            rgba(0,0,0,0.3)
+            rgba(0,0,0,0.2),
+            rgba(0,0,0,0.2)
         ),
         url(images/bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.hero2 h2{
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.8)
 }
 .colleges{
     text-transform: capitalize;
@@ -152,6 +148,7 @@ li a{
 .para{
     font-size: 20px;
     margin-top: 30px;
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.9)
 }
 .college{
     width: 400px;
@@ -254,8 +251,6 @@ li a{
     width: 350px;
     margin: 20px;
     box-shadow: 0 0 5px ;
-    position: relative;
-    border-radius: 15px;
     transition: .45s ;
     padding: 10px;
 }
@@ -386,8 +381,12 @@ input:focus{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 700px;
     color: white;
+}
+.FBC .t{
+    color: #ffa500;
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
 .histroy{
     padding: 0px 20px;
@@ -410,9 +409,16 @@ input:focus{
     text-align: center;
     text-transform: capitalize;
    font-size: 40px;
-   margin: 10px;
+   margin: 100px;
+     color: #ffa500;
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 
 }
+.bg_color{
+      background-color: rgb(34, 43, 39);
+}
+
+
 .faculties{
     display: flex;
     flex-direction: column;
@@ -422,14 +428,19 @@ input:focus{
     text-transform: capitalize;
     border-radius: 10px;
     box-shadow: 0 0 10px;
-    width: 70%;
+    width: 90%;
     height: 90%;
     margin: 0px 170px;
+    margin-left: 65px;
+    padding: 10px;
+    background-color: rgba(233, 238, 243, 0.185);
 }
+
 .faculty h2{
     text-align: center;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bold;
+    margin-bottom: 25px;
 }
 .faculties h3{
     font-size: 25px;
@@ -437,13 +448,87 @@ input:focus{
 .notes{
     display: flex;
     margin: 10px 10px;
-    gap: 80px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
-.notes li{
-    list-style: none;
-    padding: 5px;
-    line-height: 25px;
+.notes h2{
+    margin-bottom: 25px;
+    height: 180px;
+    font-size: 33px;
+    width: 350px;
 }
+.degree{
+    display: flex;
+    background-color: rgb(10, 152, 152);
+    width: 110px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    gap: 7px;
+    margin-bottom: 20px;
+    width: 150px;
+}
+.degree p{
+    padding: 9px 5px;
+    color: black;
+}
+
+.time{
+    display: flex;
+    background-color: rgb(21, 55, 35);
+    width: 110px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+
+.time p{
+    padding: 9px 5px;
+    color: white
+}
+
+.require{
+    display: flex;
+     gap: 7px;
+    padding: 0px 10px;
+     /* background-color: rgb(10, 152, 152); */
+      /* box-shadow: 0 0 1px; */
+     width: 320px;
+     height: 120px;
+    border-radius: 15px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+
+.require p{
+    padding: 9px 5px;
+    color: white
+}
+.all{
+    /* background-color: rgb(22, 39, 52); */
+    box-shadow: 0 0 1px;
+     border-radius: 15px;
+     
+}
+.career{
+    display: flex;
+    background-color: rgb(22, 39, 52);
+    box-shadow: 0 0 1px;
+    width: 320px;
+    height: 220px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    gap: 7px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.career p{
+    padding: 5px 5px;
+    color: white;
+    line-height: 30px;
+}
+
 .FBC button  {
     background-color: rgb(15, 15, 67);
     border-radius: 20px;
@@ -466,8 +551,16 @@ input:focus{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 900px;
     color: white;
+}
+.bg_color1{
+      background-color: rgb(134, 45, 16);
+}
+
+.comahs .t{
+    color: #ffa500;
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
 .comahs button  {
     background-color: rgb(15, 15, 67);
@@ -491,11 +584,12 @@ input:focus{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 700px;
     color: white;
 }
 .ipam .t{
-    color: rgb(10, 26, 126);
+    color: #ffa500;
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
 .ipam button  {
     background-color: rgb(15, 15, 67);
@@ -508,4 +602,178 @@ input:focus{
     text-transform: capitalize;
     background-color:rgb(15, 15, 67) ;
     text-decoration: none;
+}
+
+ .menu{ 
+        display: none; 
+    }
+
+    .exist{
+        display: none;
+    }
+
+
+/* responsive */
+@media (max-width:768px) {
+
+    .menu{ 
+        display: block; 
+        cursor: pointer;
+    }
+
+    .navbar1{
+     gap:10px ;
+     height: 40px;
+     padding-left: 70px;
+     border-radius: 15px;
+    position: fixed;
+    top: 1%;
+    left: 2px;
+    right: 10px;
+    
+}
+
+.navbar{
+    display: flex;
+    color: white;
+     background-color: rgb(20, 20, 64);
+     gap: 10px;
+     justify-content: space-around;
+     height: 40px;
+    padding-left: 110px;
+    position: fixed;
+    top: 1%;
+    left: 2px;
+    right: 10px;
+
+    }
+    .list{
+       
+        flex-direction: column;
+        background-color: rgb(20, 20, 64);
+        position: fixed;
+        left: 70%;
+        top: 65px;
+        padding: 20px;
+        border-radius: 10px;
+        display: none;
+    }
+    .exist{
+        font-size: 40px;
+        text-align: center;
+        transform: rotate(10deg);
+    }
+    
+    
+    .menu span{
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+    
+    .logo h2{
+        font-size: 20px;
+    }
+    
+    .hero{
+    width: 100%;
+    padding: 160px 10px;
+    font-size: 20px;
+    
+}
+
+    .h2{
+        font-size: 45px;
+        margin-top: 150px;
+    }
+
+    .hero2 h2{
+        font-size:65px;
+    }
+    
+    .para{
+    font-size: 25px;
+    margin-left: 80px ;
+    width: 300px;
+}
+    .colleges{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .college{
+    width: 350px;
+}
+    .college img{
+    width: 350px;
+}
+    .p{
+    width: 300px;
+}
+    .box1{
+    margin: 20px 20px 20px -60px;
+}
+    .box1 p{
+        width: 350px;
+    }
+    .hero4{
+     width:330px ;
+     margin-top: 200px;
+    }
+    input{
+    width: 80%;
+    margin: 10px 30px;
+}
+    .label1{
+    left: 40px;
+}
+   .label2{
+    left: 40px;
+}
+   .label3{
+    left: 40px;
+}
+
+ .disappear{
+        display: flex;
+    }
+    .faculty{
+    width: 90%;
+    height: 60%;
+    margin: 0px 10px;
+}
+.notes{
+    gap: 5px;
+    margin-left: 150px;
+}
+    .notes li{
+    list-style: none;
+    padding: 5px;
+    line-height: 35px;
+}
+.faculty{
+    width: 75%;
+    height: 60%;
+    margin: 0px 70px;
+    padding: 20px;
+}
+
+.FBC{
+    height: 1900px;
+    width: 100%;
+}
+
+.bg_color{
+    width: 100%;
+}
+
+.heading{
+   font-size: 40px;
+   margin: 100px 30px;
+
+}
 }
